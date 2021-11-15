@@ -14,4 +14,20 @@ public class PositiveNumberContainer {
     public List<Double> getNumbers() {
         return new ArrayList<>(numbers);
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        boolean isFirst = true;
+        for (double d : numbers) {
+            if (isFirst) {
+                isFirst = false;
+            }
+            else {
+                sb.append(", ");
+            }
+            sb.append(d);
+        }
+        return sb.toString();
+    }
 }

@@ -14,8 +14,6 @@ public class Main {
                 pnc.addNumber(number);
             }
         } while (number > 0);
-        for (double d : pnc.getNumbers()) {
-            System.out.print(d + ", ");
-        }
+        System.out.println(pnc);
     }
 }
